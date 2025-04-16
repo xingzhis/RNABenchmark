@@ -1,0 +1,1 @@
+apptainer shell --bind ./:/mnt/RNABenchmark --overlay overlay.img pytorch_25.03-py3.sif
