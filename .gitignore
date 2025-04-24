@@ -169,3 +169,7 @@ dsq-*
 *.img
 *.sif
 *.tsv
+outputs/
+wandb/
+*.out
+trash/

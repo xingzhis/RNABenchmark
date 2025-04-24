@@ -1,5 +1,7 @@
 from structure.resnet import renet_b16
 from transformers.models.esm.modeling_esm import *
+import torch
+import torch.nn as nn
 import pdb
 import sys
 import os

@@ -1,1 +1,5 @@
-apptainer shell --bind ./:/mnt/RNABenchmark --overlay overlay.img pytorch_25.03-py3.sif
+HOST_CA_CERT_PATH="/etc/ssl/certs/ca-bundle.crt"
+CONTAINER_CA_CERT_PATH="/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem"
+apptainer shell --nv --bind ${HOST_CA_CERT_PATH}:${CONTAINER_CA_CERT_PATH} --bind ./:/mnt/RNABenchmark --overlay ../pytorch_container/overlay.img ../pytorch_container/pytorch_25.03-py3.sif
+# I downloaded the container and ran pip install -r requirements_extra.txt
+# the versions matter.

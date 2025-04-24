@@ -1,0 +1,3 @@
+I need to make these changes to ./checkpoint/opensource/rna-fm/config.json
+  "model_type": "rna-fm",
+  "token_type": "single"
